@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koleksi - Student Stock</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Student Stock</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="koleksi.html">Koleksi</a></li>
+    </ul>
+</nav>
+
+<section class="products">
+
+<h1 class="title">Koleksi Produk</h1>
+
+<div class="grid">
+
+<!-- PRODUK -->
+<div class="grid">
+
+<div class="card">
+    <img src="images/kaos.jpg">
+    <h3>Kaos Oversize Black</h3>
+    <p>120000</p>
+    <button onclick="addCart('Kaos Oversize Black',120000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="images/hoodie.jpg">
+    <h3>Hoodie Premium</h3>
+    <p>250000</p>
+    <button onclick="addCart('Hoodie Premium',250000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="images/jeans.jpg">
+    <h3>Jeans Casual</h3>
+    <p>180000</p>
+    <button onclick="addCart('Jeans Casual',180000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="images/jaket.jpg">
+    <h3>Jaket Denim</h3>
+    <p>320000</p>
+    <button onclick="addCart('Jaket Denim',320000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="images/tshirt-white.jpg">
+    <h3>T-Shirt White Basic</h3>
+    <p>90000</p>
+    <button onclick="addCart('T-Shirt White Basic',90000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="images/cargo.jpg">
+    <h3>Celana Cargo</h3>
+    <p>210000</p>
+    <button onclick="addCart('Celana Cargo',210000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="images/varsity.jpg">
+    <h3>Jaket Varsity</h3>
+    <p>350000</p>
+    <button onclick="addCart('Jaket Varsity',350000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="images/sneakers.jpg">
+    <h3>Sneakers Casual</h3>
+    <p>400000</p>
+    <button onclick="addCart('Sneakers Casual',400000)">Tambah Keranjang</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- CART -->
+<div class="cart">
+
+<h2>Keranjang 🛒</h2>
+
+<ul id="cartList"></ul>
+
+<p>Total: <span id="total">0</span></p>
+
+<button onclick="checkout()">Checkout WhatsApp</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
